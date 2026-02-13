@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+.navbar{
+    background-color:deepskyblue;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* justify-content: center; */
+    align-items: start;
+    height: 100%;
+    padding: 15px 70px 0px 15px;
+    color: white;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar a img{
+    margin: 0px 10px 0px 10px;
+
+}
+.home-section{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
+.settings-section{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.Dashboard{
+    display: flex;
+    gap:10px;
+}
+.search-section{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.profile-section{
+    display: flex;
+    gap: 15px;
+    margin-right: 40px;
+}
+
+.user-info-section{
+    display: flex;
+    justify-content: space-between;
+
+}
+.right-user-info{
+    display: flex;
+    gap: 25px;
+    margin-right: 100px;
+}
+.top-section{
+    border: solid black;
+}
+.main-content{
+    border: solid blue;
+    display: flex;
+    
+}
+.content-left{
+    border: solid red;
+    width: 70%;
+    margin: 20px;
+}
+.content-right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;   
+
+    margin: 20px;
+}
+.grid-item-card{
+    display: flex;
+    flex-direction: column;
+    /* width: 70%; */
+    border: solid 1px black;
+}
+.grid-container-left{
+    display: grid;
+    grid-template: 250px 250px 250px/250px 250px 250px;
+    gap: 20px;
+    
+}
+.heading-container-topleft, .heading-container-topright{
+    font-size: larger;
+}
+.annoucements-list, .Trending-list{
+    display: flex;
+    flex-direction: column;
+    border: solid  1px;
+}
+.annoucements-list-item{
+    display: flex;
+    flex-direction: column;
+    border: solid  1px;
+}
+.trending-list-item{
+    display: flex;
+}
