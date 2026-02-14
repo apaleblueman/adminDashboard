@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Grid Project</title>
 </head>
 <body>
 <div class="main-left">
     <div class="navbar">
-        <h1 class="Dashboard"><img src="#" class="heading-icon"/>Dashboard</h1>
+        <div class="Dashboard"><img src="./assets/view-dashboard.svg" class="heading-icon"/><h1>Dashboard</h1></div>
         <div class="home-section">
-            <a href="#"><img src="#" class="icon"/>Home</a>
-            <a href="#"><img src="#" class="icon"/>Profile</a>
-            <a href="#"><img src="#" class="icon"/>Messages</a>
-            <a href="#"><img src="#" class="icon"/>History</a>
-            <a href="#"><img src="#" class="icon"/>Task</a>
-            <a href="#"><img src="#" class="icon"/>Communities</a>
+            <div class="navbar-item"><img src="./assets/home.svg" class="icon"/><a href="#">Home</a></div>
+            <div class="navbar-item"><img src="./assets/profile.svg" class="icon"/><a href="#">Profile</a></div>
+            <div class="navbar-item"><img src="./assets/msg.svg" class="icon"/><a href="#">Messages</a></div>
+            <div class="navbar-item"><img src="./assets/history.svg" class="icon"/><a href="#">History</a></div>
+            <div class="navbar-item"><img src="./assets/calendar-check.svg" class="icon"/><a href="#">Task</a></div>
+            <div class="navbar-item"><img src="./assets/account-group.svg" class="icon"/><a href="#">Communities</a></div>
         </div>
 
         <div class="settings-section">
-            <a href="#"><img src="#" class="icon"/>Settings</a>
-            <a href="#"><img src="#" class="icon"/>Support</a>
-            <a href="#"><img src="#" class="icon"/>Privacy</a>
+            <div class="navbar-item"><img src="./assets/cog.svg" class="icon"/><a href="#">Settings</a></div>
+            <div class="navbar-item"><img src="./assets/face-agent.svg" class="icon"/><a href="#">Support</a></div>
+            <div class="navbar-item"><img src="./assets/privacy.svg" class="icon"/><a href="#">Privacy</a></div>
         </div>
     </div>
 </div>
@@ -30,20 +33,22 @@
     <div class="top-section">
     <div class="search-section">
         <div class="search-bar">
-            <img class="search-icon" src="#"/>
+            <img class="search-icon" src="./assets/search.svg"/>
             <input class="search"/>
         </div>
         <div class="profile-section">
-            <div class="bell"><img src="#"/></div>
-            <div class="profile-pic"><img src="#"/></div>
-            <div class="profile-pic">John Doe</div>
+            <div class="bell"><img src="./assets/bell.svg"/></div>
+            <img class="profile-pic" src="./assets/userProfile.png"/>
+            <div class="username">John Doe</div>
         </div>
     </div>
     <div class="user-info-section">
         <div class="left-user-info">
-        <img src="#" class="user-pic"/>
-        <span class="greeting">Hi there,</span>
-        <span class="username-greeting">John doe(@JohnDoe)</span>
+        <img src="./assets/userProfile.png" class="user-pic"/>
+        <div class="greeting-container">
+            <span class="greeting">Hi there,</span>
+            <span class="username-greeting">John doe(@JohnDoe)</span>
+        </div>
         </div>
         <div class="right-user-info">
             <div class="button"><button>New</button></div>
@@ -57,10 +62,10 @@
             <div class="heading-container-topleft">
                 <p>Your Projects</p>
             </div>  
-            <div class="grid-container-left">
+       <div class="grid-container-left">
                 <div class="grid-item-card">
-                    <p class="project-title">Lorem ipsum dolor sit</p>
-                    <p class="project-description">project-description.</p>
+                    <p class="project-title">AI Image Generator</p>
+                    <p class="project-description">Transforms text prompts into high-quality, unique images using AI. Perfect for designers and marketers needing quick visual content. Images are royalty-free and can be downloaded in multiple formats.</p>
                     <div class="buttons">
                         <button>1</button>
                         <button>2</button>
@@ -68,8 +73,8 @@
                     </div>
                 </div>
                 <div class="grid-item-card">
-                    <p class="project-title">Lorem ipsum dolor sit</p>
-                    <p class="project-description">project-description.</p>
+                    <p class="project-title">Budget Tracker App</p>
+                    <p class="project-description">Categorize expenses, set limits, and visualize cash flow with charts. Get insights and alerts to manage spending. Data syncs securely across devices.</p>
                     <div class="buttons">
                         <button>1</button>
                         <button>2</button>
@@ -77,8 +82,8 @@
                     </div>
                 </div>
                 <div class="grid-item-card">
-                    <p class="project-title">Lorem ipsum dolor sit</p>
-                    <p class="project-description">project-description.</p>
+                    <p class="project-title">Weather Dashboard</p>
+                    <p class="project-description">Hyper-local forecasts and interactive radar from multiple sources. Customizable tracking and severe weather alerts included. Displays 7-day outlook with temperature and precipitation data.</p>
                     <div class="buttons">
                         <button>1</button>
                         <button>2</button>
@@ -86,8 +91,8 @@
                     </div>
                 </div>
                 <div class="grid-item-card">
-                    <p class="project-title">Lorem ipsum dolor sit</p>
-                    <p class="project-description">project-description.</p>
+                    <p class="project-title">TaskFlow</p>
+                    <p class="project-description">Kanban-style tool with drag-and-drop boards and task assignments. Collaborate with comments, file attachments, and activity logs. Streamlines workflow from To Do to Done.</p>
                     <div class="buttons">
                         <button>1</button>
                         <button>2</button>
@@ -95,8 +100,8 @@
                     </div>
                 </div>
                 <div class="grid-item-card">
-                    <p class="project-title">Lorem ipsum dolor sit</p>
-                    <p class="project-description">project-description.</p>
+                    <p class="project-title">Recipe Finder</p>
+                    <p class="project-description">Find recipes based on ingredients you have. Step-by-step instructions and nutritional info provided. Save favorites and generate shopping lists for missing items.</p>
                     <div class="buttons">
                         <button>1</button>
                         <button>2</button>
@@ -104,8 +109,8 @@
                     </div>
                 </div>
                 <div class="grid-item-card">
-                    <p class="project-title">Lorem ipsum dolor sit</p>
-                    <p class="project-description">project-description.</p>
+                    <p class="project-title">Retro Snake Game</p>
+                    <p class="project-description">Classic Snake gameplay with smooth controls and retro visuals. Increasing difficulty and local high score tracking. Eat food to grow without hitting walls or yourself.</p>
                     <div class="buttons">
                         <button>1</button>
                         <button>2</button>
