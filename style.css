@@ -163,8 +163,8 @@ body{
 .main-content{
     /* border: solid blue; */
     display: flex;
-    background-color: rgba(36, 36, 36, 0.139);
-    gap: 20px;
+    background-color: rgba(36, 36, 36, 0.09);
+    
     padding-bottom:15%;
     
 }
@@ -200,13 +200,16 @@ body{
     color: grey;
     
 }
-.grid-item-card .buttons{
-    align-self: end;
-
+.buttons{
+    align-self: flex-end;
+    margin-top: auto
+}
+.buttons .project-button{
+    width: 18px;
+    height: auto;
 }
 .grid-container-left{
     display: grid;
-    
     grid-template: 210px 210px 210px / 350px 350px;
     gap: 20px;
     
@@ -215,17 +218,42 @@ body{
 .heading-container-topleft, .heading-container-topright{
     font-size: large;
     font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
 .annoucements-list, .Trending-list{
+
     display: flex;
     flex-direction: column;
-    /* border: solid  1px; */
+    background-color: white;
+    border-radius: 10px;
+    font-size: small;
+    padding:20px;
+    gap:20px;
 }
 .annoucements-list-item{
     display: flex;
     flex-direction: column;
-    /* border: solid  1px; */
+    
+}
+.annoucements-list-item .annoucements-heading{
+        font-weight: bold;
+        padding-top: 10px;
+}
+.annoucements-list-item .annoucements-description{
+        padding-bottom: 10px;
+        color: gray;
+        font-size: smaller;
+}
+.trending-user-pic{
+    width: 20%;
+    border: 200px;
 }
 .trending-list-item{
     display: flex;
+    align-items: center
+}
+
+hr{
+    color: rgba(242, 242, 242, 0.86);
 }
